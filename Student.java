@@ -1,9 +1,13 @@
 
-public class Student {
-	String name;
-	int score;
+public class Student extends Person{
+	public void set() {
+		super.age = 18;
+		super.height = 155;
+		super.name = "오지은";
+		super.setWeight(45);
+	}
 	
-	public void printInfo() {
-		System.out.println("학생의 이름은 " + name + "이고, 학생의 점수는 " + score + "입니다.");
+	public void print() {
+		System.out.println(super.age +"\t"+ super.height +"\t" + super.name +"\t" + super.getWeight());
 	}
 }
